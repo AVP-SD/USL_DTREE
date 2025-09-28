@@ -3,21 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirect Button</title>
-  <style>
-    <!-- Overlay -->
-<div id="overlay">
-  <div class="overlay-box">
-    <h2>This site is already open</h2>
-    <p>You already have this site open in another tab.<br>
-       Would you like to continue here instead?</p>
-    <div class="btns">
-      <button id="continueHere">Continue Here</button>
-      <button id="stayThere">Stay on Other Tab</button>
-    </div>
-  </div>
-</div>
-
 <style>
+  body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
   /* Fullscreen dark overlay */
   #overlay {
     position: fixed;
@@ -92,7 +100,24 @@
     to   { transform: translateY(0); opacity: 1; }
   }
 </style>
-
+</head>
+<body>
+  <button onclick="window.location.href='https://avp-sd.github.io/Scenario-Decomposition/';">
+    Go to The New Classification System
+  </button>
+   <!-- Overlay -->
+<div id="overlay">
+  <div class="overlay-box">
+    <h2>This site is already open</h2>
+    <p>You already have this site open in another tab.<br>
+       Would you like to continue here instead?</p>
+    <div class="btns">
+      <button id="continueHere">Continue Here</button>
+      <button id="stayThere">Stay on Other Tab</button>
+    </div>
+  </div>
+</div>
+  
 <script>
 (function() {
   const TAB_KEY = "active_tab_lock";
@@ -139,35 +164,6 @@
   });
 })();
 </script>
-
-    body {
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-    }
-
-    button {
-      padding: 12px 24px;
-      font-size: 18px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <button onclick="window.location.href='https://avp-sd.github.io/Scenario-Decomposition/';">
-    Go to The New Classification System
-  </button>
 </body>
 </html>
 
